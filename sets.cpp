@@ -36,5 +36,19 @@ int main()
     cout << ispresent << endl;
 
     A.push_back(90);
+    A.push_back(100);
 
+    //now we are going to look at iterators in c++
+    //we use iterators when we want to point to some element in the range of same elements such as array or vector that has the ability to iterate through the elements
+
+    //this lower_bound will return the first element which is greater than or equal to the given number
+    vector<int>::iterator it = lower_bound(A.begin(), A.end(), 90);
+
+    //the upper_bound will return first value which is strictly   greater than the given number
+    vector<int>::iterator it2 = upper_bound(A.begin(), A.end(), 90);
+
+    cout << it2 - it << endl; // you can do the basic arithmetic in iterators
+
+    //to access the value within the iterators use the dereference operator *
+    cout << "the value is " << *it2 << endl;
 }
