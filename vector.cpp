@@ -56,6 +56,7 @@ int main()
     cout << it2 - it << endl; // you can do the basic arithmetic in iterators
 
     //to access the value within the iterators use the dereference operator *
+<<<<<<< HEAD:sets.cpp
     cout << "the value is " << *it2 << endl; //the time complexity of iterator is O(NlogN)
 
     //to gt the count of of a certain number in the container just use upper bound and lower bound with  iterator and get the difference of them
@@ -79,3 +80,7 @@ int main()
     }
     cout << endl;
 }
+=======
+    cout << "the value is " << *it2 << endl;
+}
+>>>>>>> 2bde328b2b8ad22e115efc978b0d661c12a91f51:vector.cpp
